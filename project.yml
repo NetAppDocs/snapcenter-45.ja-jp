@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Software
+  name: SnapCenter Software 4.5
   internal:
     pdf_enabled: true
   prod:
@@ -10,7 +10,7 @@ settings:
   langs: ja-jp,us-en,zh-cn
 sidebar:
   entries:
-  - title: SnapCenter ソフトウェアのドキュメント
+  - title: SnapCenter ソフトウェア 4.5 のドキュメント
     url: "/index.html"
   - title: リリースノート
     url: "/reference_release_notes.html"

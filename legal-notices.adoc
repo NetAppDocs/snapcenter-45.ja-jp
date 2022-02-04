@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: reference_legal_notices.html 
+permalink: legal-notices.html 
 keywords: copyrights, notice, trademarks, patents, privacy, open source 
 summary: 著作権に関する声明、商標、特許などにアクセスできます。 
 ---

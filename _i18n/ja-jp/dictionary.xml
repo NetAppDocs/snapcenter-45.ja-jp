@@ -3758,7 +3758,6 @@
   <block id="cca6a85f5065269f712b6122c56bcc23" category="paragraph">LUN のエクスポート先であるホストの iSCSI イニシエータ名を入力します。このオプションは、 LUN リソースタイプを選択した場合にのみ使用できます。</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="paragraph">プロトコル</block>
   <block id="19ca9a39b837f0de2cd60194c3115a82" category="paragraph">LUN プロトコルを入力します。このオプションは、 LUN リソースタイプを選択した場合にのみ使用できます。</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">[+]</block>
   <block id="4e783e8dfeae9de37071ca1aacd853de" category="paragraph">リソースとして LUN を選択し、セカンダリバックアップからクローニングする場合、デスティネーションボリュームのリストが表示されます。1 つのソースについて複数のデスティネーションボリュームを選択することができます。</block>
   <block id="d21ab82b42875e082ef4574c36d6c5e4" category="admonition">クローニングを実行する前に、 iSCSI イニシエータまたは FCP が存在し、代替ホストに設定およびログインしていることを確認する必要があります。</block>
   <block id="2516fb414e835dfca0b69565d324572e" category="list-text">[* Scripts] ページで、次の手順を実行します。</block>
@@ -7342,7 +7341,6 @@
   <block id="c839588253fb91ab7c3ffd7dbc89ef20" category="sidebar">SQL Server のリストア戦略</block>
   <block id="2dbf352013e90b28f510baa76c1423f6" category="sidebar">SnapCenter Plug-in for Microsoft SQL Server のインストールのクイックスタート</block>
   <block id="25bf2c62056fbb603e50ca9faa296f05" category="sidebar">SnapCenter Plug-in for Microsoft SQL Server をインストールする準備をします</block>
-  <block id="3e3c892945f01849a83a9ba45b50046a" category="sidebar">ホストを追加して SnapCenter Plug-in for Microsoft SQL Server をインストールするための前提条件</block>
   <block id="a637f97603ba27f9233ebf52eb975336" category="sidebar">SnapCenter Plug-in for Microsoft SQL Server をインストールします</block>
   <block id="32011135d9979489b3395d0006de49b3" category="sidebar">CA 証明書をインポートする</block>
   <block id="01f97c83c1f349ab154ea4e7fed85418" category="sidebar">SQL Server リソースをリストアする</block>
@@ -7364,4 +7362,5 @@
   <block id="c16c43065a548034a76faadb18015c27" category="sidebar">SnapCenter の RBAC</block>
   <block id="3d560ec88523f55162d8aaab5dfd360a" category="sidebar">SnapCenter ソフトウェア 4.5 のドキュメント</block>
   <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="sidebar">SnapCenter ソフトウェア</block>
+  <block id="699f1c0496b9360a6686498114b0be37" category="paragraph">FAS 、 AFF 、および Amazon FSX に必要です</block>
 </blocks>

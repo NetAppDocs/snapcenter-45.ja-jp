@@ -434,7 +434,6 @@
   <block id="5bdaa230bd223b63ee44dc6865402ddb" category="paragraph">CA 証明書を設定し、 SnapCenter サーバと対応するプラグインホストに CA 証明書を導入する必要があります。プラグインの CA 証明書検証を有効にする必要があります。</block>
   <block id="260d48875b5f8dd6df118d96f41fae32" category="list-text">CA 証明書を有効または無効にするには、 run_Set-SmCertificateSetting_cmdlet を使用します。</block>
   <block id="0b8e4c21643d060ddc3ab8b77952d58c" category="list-text">このプラグインの証明書ステータスは、 _Get-SmCertificateSettings_ を使用して表示できます。</block>
-  <block id="55f083ba6455ee857592fe48038db650" category="paragraph">コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block>。</block>
   <block id="e3496f6d2696003cd08139c96386cc45" category="list-text">左側のナビゲーションペインで、 * Hosts * （ホスト）をクリックします。</block>
   <block id="1fb1c7da13751553d9822a326bcffe06" category="list-text">[Hosts] ページで、 [*Managed Hosts] をクリックします。</block>
   <block id="c59169129dc76fe856feed46d028c5f7" category="list-text">1 つまたは複数のプラグインホストを選択します。</block>
@@ -721,7 +720,6 @@
   <block id="eb324a0bcd793bce95da852c11a1a568" category="paragraph">_Get-ChildItem - パス証明書： \localmachine\My_</block>
   <block id="4a258e7f05f08d57a4acdbacea054638" category="list-text">サムプリントをコピーします。</block>
   <block id="caef6d3f9e7cdd9ed1d3eaabe29db549" category="summary">カスタムプラグインリソースを保護する場合は、 SnapCenter Custom Plug-ins をインストールしてセットアップする必要があります。</block>
-  <block id="299b0e289b8c6b18ae4948ce9c8d828b" category="doc">SnapCenter Custom Plug-ins をインストールします</block>
   <block id="86f7f637d3819a7b4814644b7f8d8972" category="image-alt">SCC インストール設定ワークフロー</block>
   <block id="d61e736bc78dc6b6bef444a82078d1f7" category="summary">SnapCenter プラグインパッケージのインストールの進捗状況は、 Jobs ページで監視できます。インストールの進捗状況をチェックして、インストールが完了するタイミングや問題があるかどうかを確認できます。</block>
   <block id="36c1f2ec62294c41aad60383fd84873d" category="doc">カスタムプラグインのインストールのステータスを監視する</block>
@@ -2071,7 +2069,6 @@
   <block id="d04228e20798411b28cae6cb653df92c" category="list-text">SnapCenter サーバ間でフェイルオーバーが発生し、既存の SnapCenter セッションも存在する場合は、ブラウザを閉じてから再度 SnapCenter にログオンする必要があります。</block>
   <block id="9095768bd723dca6aad8c82ad7df94fb" category="list-text">ロードバランサのセットアップ（ NLB または F5 ）で、 NLB ノードまたは F5 ノードによって一部解決されているノードを追加し、 SnapCenter ノードがこのノードに到達できない場合、 SnapCenter ホストページでホストが停止して実行中の状態になる頻度が高くなります。この問題を解決するには、両方の SnapCenter ノードが NLB ノードまたは F5 ノードでホストを解決できることを確認する必要があります。</block>
   <block id="061e7171f662c103e082fe0f01a9e8d7" category="summary">ワークフロー図は、 SnapCenter サーバのインストールと設定の手順を示しています。</block>
-  <block id="6f550466a69bad21f11ab99fc12db497" category="doc">インストールワークフロー</block>
   <block id="1b6e4426f8c688c2d09195bf31d0242c" category="paragraph">このワークフローでは、 SnapCenter サーバのインストールと設定に必要なさまざまなタスクについて説明します。</block>
   <block id="354c84f19db927b615f7e75880c69840" category="image-alt">SnapCenter サーバをインストールします</block>
   <block id="21b55e1babd986a5f3ed39019361ea07" category="summary">VMware 環境での SnapCenter Plug-in for Microsoft Windows を使用して、 LUN の作成と管理、および Snapshot バックアップコピーの管理を行うことができます。</block>
@@ -3279,7 +3276,6 @@
   <block id="fee0bec9fecb6576229640dcf9eec620" category="paragraph">SnapCenter からホストを削除する場合、 SnapCenter はホストを削除する前にホスト上のすべてのプラグインパッケージをアンインストールします。</block>
   <block id="cd9cae3233179ab0aa5b93a449869d50" category="list-text">SnapCenter GUI は、一度に 1 つのホストからプラグインを削除します。</block>
   <block id="e4b51b04ea7a4e9b027ffb18024a9938" category="paragraph">SnapCenter GUI を使用する場合、プラグインをアンインストールできるホストは一度に 1 つです。ただし、複数のアンインストール処理を同時に実行できます。</block>
-  <block id="97235612d6e9ec92b744588acea38c93" category="paragraph">また、 _Uninstall-sSmHostPackage_ コマンドレットと必要なパラメータを使用して、複数のホストからプラグインをアンインストールすることもできます。コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block>。</block>
   <block id="a4ad00e40c8d026de37f699c1cdc43f2" category="admonition">SnapCenter Server がインストールされているホストから SnapCenter Plug-ins Package for Windows をアンインストールすると、 SnapCenter Server のインストールが破損します。SnapCenter Server が不要になったことが確実である場合を除き、 SnapCenter Plug-ins Package for Windows をアンインストールしないでください。</block>
   <block id="b431698bc085bcde968e1e3d9582578a" category="list-text">Managed Hosts ページで、プラグインまたはプラグインパッケージをアンインストールするホストを選択します。</block>
   <block id="9e8fa339338bb378f91b2bc7b281c6c6" category="list-text">削除するプラグインの横にある * 削除 * &gt; * 送信 * をクリックします。</block>
@@ -3320,7 +3316,6 @@
   <block id="c1fb7c552ac7beaf17dc346fda22eff6" category="list-text">リソースグループを削除すると、関連付けられているスケジュールもすべて削除されます。</block>
   <block id="622c9e28dad13fa5c04d47d33d343831" category="list-text">ホストに別のホストと共有されているリソースグループがある場合にそのホストを削除すると、リソースグループも削除されます。</block>
   <block id="759ef57c3be2a273728558ce141e699a" category="list-text">運用停止されたプラグインホストまたは到達不能なプラグインホストを削除するには、 _Remove-SmHost_cmdlet を使用してください。</block>
-  <block id="768d88b8ddf587032dc8848808664398" category="paragraph">コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block></block>
   <block id="40b2be8df06289f2b15c3ba4ee7adb9d" category="list-text">ホストの削除にかかる時間は、バックアップの数と保持設定によって異なります。これは、各コントローラから Snapshot コピーが削除され、メタデータが消去されるためです。</block>
   <block id="5d892beace7b1624b071044ece982dcc" category="list-text">削除するホストを選択し、 * Remove * をクリックします。</block>
   <block id="19355742858cf70570e1a01c80a490ab" category="list-text">Oracle RAC クラスタの場合、クラスタ内のすべてのホストから SnapCenter ソフトウェアを削除するには、 * クラスタのすべてのホストを含める * を選択します。</block>
@@ -3671,7 +3666,6 @@
   <block id="14b1f939d4d6ad1f9002f584e1e54fa8" category="paragraph">たとえば、プライマリ Snapshot コピーの保持期間が 7 日で、セカンダリ Snapshot コピーの保持期間が 45 日の場合、 45 日が完了してすべてのバックアップが削除されたあとに、リソースグループと古い MDC リソースを削除する必要があります。</block>
   <block id="7b61486d739fb4f1d37092b600cea0e2" category="paragraph"><block ref="7b61486d739fb4f1d37092b600cea0e2" category="inline-link-macro-rx"></block></block>
   <block id="d03608911fb0f378ca59b86a32adfb17" category="summary">SAP HANA データベースを保護する場合は、 SnapCenter Plug-in for SAP HANA Database をインストールしてセットアップする必要があります。</block>
-  <block id="56a0f778b7f57042bb66476d29945940" category="doc">SnapCenter Plug-in for SAP HANA Database をインストール</block>
   <block id="8eb6eae2f08f541d02277c6746c4fa05" category="image-alt">SAP HANA のインストール設定ワークフロー</block>
   <block id="624da959c6b9ec232f2bebd4c11e271a" category="summary">バックアップタイプでは、作成するバックアップのタイプを指定します。SnapCenter では、 SAP HANA データベースについて、ファイルベースのバックアップと Snapshot コピーベースのバックアップをサポートしています。</block>
   <block id="2a681580cba5d0bac1fe8b6665a6a47e" category="doc">サポートされるバックアップのタイプ</block>
@@ -4450,7 +4444,6 @@
   <block id="847f76b3c1f78960c8aee5925dc8bb94" category="list-text">[ * スクリプト * ] ページで、クローニング処理の前後に実行するスクリプトのタイムアウト、パス、および引数を入力します。</block>
   <block id="cd580f0c35d4c37236f3153c15452b6f" category="paragraph">デフォルトのスクリプトタイムアウトは 60 秒です。</block>
   <block id="914e3ed381a18db751f3d27cad180ad7" category="paragraph">また、送信者と受信者の E メールアドレス、および E メールの件名を指定する必要があります。実行したクローン処理のレポートを添付する場合は、 * ジョブレポートの添付 * を選択します。</block>
-  <block id="c07bc6afd837580ac94b8ba64ed4462f" category="paragraph">EMS については、を参照してください<block ref="bf71d06d94476a49fc451638041a04a3" category="inline-link-rx"></block></block>
   <block id="b8ceb1eaf0d60af03679989562024d6b" category="paragraph">作成したクローンは、名前を変更しないでください。</block>
   <block id="8a2bd81e968aaadb6ec10a1b58f541cc" category="inline-link-macro">SQL Server データベース、インスタンス、または可用性グループをバックアップする</block>
   <block id="38c78702a48e457f5ef291281168432e" category="paragraph"><block ref="38c78702a48e457f5ef291281168432e" category="inline-link-macro-rx"></block></block>
@@ -5006,7 +4999,6 @@
   <block id="d687c5d710656984c3ed7b21d450d2bc" category="list-text">必要に応じてサブディレクトリを選択します。</block>
   <block id="f12114bdb8ab18be62b5bcb364a98685" category="paragraph">[ 事前確認をスキップ ] チェックボックスをオンにしていない場合、プラグインをインストールするための要件をホストが満たしているかどうかが検証されます。ディスクスペース、 RAM 、 PowerShell のバージョン、 .NET のバージョン、場所（ Windows プラグインの場合）、および Java のバージョン（ Linux プラグインの場合）が、最小要件に照らして検証されます。最小要件を満たしていない場合は、対応するエラーまたは警告メッセージが表示されます。</block>
   <block id="230797cd257f4279279a678587ed7d3e" category="summary">SQL Server データベースを保護する場合は、 SnapCenter Plug-in for Microsoft SQL Server をインストールしてセットアップする必要があります。</block>
-  <block id="f2307f08324f486f71f2209e1d4e0d5f" category="doc">SnapCenter Plug-in for Microsoft SQL Server のインストールワークフロー</block>
   <block id="33666019cac43e63f53db79cad8f33ac" category="image-alt">scsql install configure ワークフロー</block>
   <block id="51d95bab000b8bd5e8f9d83c3f25d453" category="summary">再シードは、可用性グループ（ AG ）データベースをリストアするためのオプションです。セカンダリデータベースが AG 内のプライマリデータベースと同期していない場合は、セカンダリデータベースを再シードできます。</block>
   <block id="951ead00aca07936d7cbe2d0eaf3bdde" category="doc">可用性グループデータベースを再シードしています</block>
@@ -5203,7 +5195,6 @@
   <block id="8ab00376f11ae4d62cc80dab05f617ea" category="doc">Plug-in for SQL Server のバックアップ保持オプション</block>
   <block id="4a33fcf6d48bb7f648ebc49217cba162" category="summary">リストアワークフローには、計画、リストア処理の実行、および処理の監視が含まれます。</block>
   <block id="1ef6e64eb14d3b262db62b7d313ebbbe" category="summary">Oracle データベースを保護する場合は、 SnapCenter Plug-in for Oracle Database をインストールしてセットアップする必要があります。</block>
-  <block id="829ab3d9655362e52e689933510a1e37" category="doc">Plug-in for Oracle Database のインストールワークフロー</block>
   <block id="a19d33029ae6794cb5370530a85b7fe4" category="image-alt">SCO インストール設定ワークフロー</block>
   <block id="f0bf0f39170a5cc3bd7cc74a25e2e59d" category="summary">SnapCenter Plug-in Loader サービスは、 Linux または AIX 用のプラグインパッケージをロードして、 SnapCenter サーバーと通信します。SnapCenter Plug-in Loader サービスは、 Linux 用の SnapCenter Plug-ins Package または AIX 用 SnapCenter Plug-ins Package をインストールするとインストールされます。</block>
   <block id="58217bc6f1b79fc60156611e99bd9aa8" category="doc">SnapCenter Plug-in Loader サービスを設定します</block>
@@ -7300,7 +7291,6 @@
   <block id="3d8a9e359cdf4b956d6850836e03a25e" category="sidebar">カスタムプラグインのバックアップ戦略</block>
   <block id="eada736bfcfe3be151f853e6f08f6d26" category="sidebar">ネイティブ形式</block>
   <block id="08759ac851b4d644eddfd819f2b366e9" category="sidebar">SnapCenter カスタムプラグインをインストールする準備をします</block>
-  <block id="16a0da04ed4ea27dbbb965b612c6b369" category="sidebar">SnapCenter Custom Plug-ins のインストールワークフロー</block>
   <block id="834849dd07442651b1ce8092c92186f0" category="sidebar">SnapCenter Custom Plug-ins をインストールします</block>
   <block id="e94a41320f7b470ab4c94c28575be94e" category="sidebar">CA 証明書を設定します</block>
   <block id="0e1b3005c7d7fef8012117ae579df248" category="sidebar">バックアップのワークフロー</block>
@@ -7311,7 +7301,6 @@
   <block id="16a46d711b809ec337c7f5488089048a" category="sidebar">Exchange リソースをバックアップする</block>
   <block id="e846bcfd3a099fef65a4bf829013b44e" category="sidebar">Exchange リソースをリストアします</block>
   <block id="ab5f4e39159ac71e7f3f1e7080905a20" category="sidebar">SnapCenter サーバのインストール</block>
-  <block id="8080a0ca91a92bcdd7db001b9dd7d378" category="sidebar">ワークフローをインストールします</block>
   <block id="f514139bd8bb4cc318cbbff458dd2226" category="sidebar">SnapCenter サーバをインストールする準備をします</block>
   <block id="bb8e9cdba9e13f92c0ca73c3ae3f6c05" category="sidebar">Storage Virtual Machine の接続とクレデンシャル</block>
   <block id="d816b0b5150b290e2a4a44bdb570d328" category="sidebar">CA 証明書をインポートします</block>
@@ -7328,7 +7317,6 @@
   <block id="883135fe64e6d1e34b5f9e436f840927" category="sidebar">SAP HANA データベースのバックアップ戦略</block>
   <block id="01feedeb5589791154fb6933172b117e" category="sidebar">SAP HANA データベースのリストアとリカバリの戦略</block>
   <block id="b121f809528d9b2de8b169c1a245c274" category="sidebar">SnapCenter Plug-in for SAP HANA Database をインストールする準備をします</block>
-  <block id="8df068e4b07db24cbb362d904ec51ab4" category="sidebar">SnapCenter Plug-in for SAP HANA Database のインストールワークフロー</block>
   <block id="abad280cf46d16a0bab0a51ae1663cf8" category="sidebar">SnapCenter Plug-in for SAP HANA Databases をインストールします</block>
   <block id="d03427303a92403b89bef9b602954bc0" category="sidebar">リソースを検出し、マルチテナントデータベースコンテナでデータ保護を準備</block>
   <block id="6119871227cfd0ac53fa00369e5ea153" category="sidebar">SnapCenter Jobs ページでバックアップ処理を監視します</block>
@@ -7363,4 +7351,14 @@
   <block id="3d560ec88523f55162d8aaab5dfd360a" category="sidebar">SnapCenter ソフトウェア 4.5 のドキュメント</block>
   <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="sidebar">SnapCenter ソフトウェア</block>
   <block id="699f1c0496b9360a6686498114b0be37" category="paragraph">FAS 、 AFF 、および Amazon FSX に必要です</block>
+  <block id="1360b9c3f96e4bcb224d198ae827046e" category="doc">SnapCenter Plug-in for SAP HANA Database のインストールワークフロー</block>
+  <block id="916c2654d1879ff989ca995cf30c4ee0" category="paragraph">EMS については、を参照してください<block ref="04e4e598b45356511dd89b0fd94b6706" category="inline-link-rx"></block></block>
+  <block id="56088cfae9d226d8be7d57fa8b8c6b7e" category="doc">SnapCenter Plug-in for Microsoft SQL Server のインストールワークフロー</block>
+  <block id="706c1d4933d296d42d61b064f4e637ae" category="doc">インストールワークフロー</block>
+  <block id="1cd8b2345e3fc8629233e588fdab2761" category="doc">SnapCenter Plug-in for Oracle Database のインストールワークフロー</block>
+  <block id="31db120ce3e7f7d5198a060e87905d01" category="doc">SnapCenter Plug-in for Microsoft Exchange Server のインストールワークフロー</block>
+  <block id="d9ac41630ae6a20177466403e2d328d8" category="doc">SnapCenter Custom Plug-ins のインストールワークフロー</block>
+  <block id="15e336a500bbc8b78c88e27a721b8803" category="doc">SnapCenter Plug-in for Microsoft Windows のインストールワークフロー</block>
+  <block id="b14fc44cfe032bef907580bf7aae09ed" category="paragraph">コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block></block>
+  <block id="3508e18c47b24e9df15eebd5671549ba" category="paragraph">また、 _Uninstall-sSmHostPackage_ コマンドレットと必要なパラメータを使用して、複数のホストからプラグインをアンインストールすることもできます。コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block>。</block>
 </blocks>

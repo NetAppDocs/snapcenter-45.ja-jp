@@ -5,6 +5,7 @@ keywords: prerequisites, iSCSI, Oracle path, host requirement for Linux, sudo pr
 summary: ホストを追加してプラグインパッケージをインストールする前に、すべての要件を満たしておく必要があります。 
 ---
 = ホストを追加して Plug-in Package for Linux または AIX をインストールするための前提条件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

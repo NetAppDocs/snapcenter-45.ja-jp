@@ -5,6 +5,7 @@ keywords: ports, port requirements
 summary: SnapCenter サーバとアプリケーションまたはデータベースのプラグインをインストールする前に、接続とポートの要件が満たされていることを確認する必要があります。 
 ---
 = 接続とポートの要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

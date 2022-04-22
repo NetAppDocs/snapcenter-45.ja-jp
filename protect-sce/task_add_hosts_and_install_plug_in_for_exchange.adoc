@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenterAdd Host ページを使用して、 Windows ホストを追加できます。指定したホストに Plug-in for Exchange が自動的にインストールされます。これはプラグインのインストールに推奨される方法です。ホストを追加してプラグインをインストールするには、個々のホストまたはクラスタを使用します。 
 ---
 = ホストを追加し、 Plug-in for Exchange をインストールします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

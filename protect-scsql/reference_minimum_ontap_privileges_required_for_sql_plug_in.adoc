@@ -5,6 +5,7 @@ keywords:
 summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。 
 ---
 = SQL プラグインに必要な最小限の ONTAP 権限
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

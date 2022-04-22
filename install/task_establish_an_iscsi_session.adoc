@@ -5,6 +5,7 @@ keywords: iSCSI session
 summary: iSCSI を使用して LUN に接続する場合は、 LUN を作成して通信を有効にする前に、 iSCSI セッションを確立する必要があります。 
 ---
 = iSCSI セッションを確立します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

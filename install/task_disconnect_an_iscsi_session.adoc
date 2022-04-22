@@ -5,6 +5,7 @@ keywords: iSCSI session
 summary: 複数のセッションを実行しているターゲットから iSCSI セッションを切断しなければならない場合があります。 
 ---
 = iSCSI セッションを切断します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

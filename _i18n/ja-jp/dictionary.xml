@@ -4601,7 +4601,6 @@
   <block id="3c68b24e5b4018140925233153bb6538" category="admonition">検証サーバでストレージ接続が確立されていないと、検証処理は失敗して「 Failed to mount disk 」というエラーメッセージが表示されます。</block>
   <block id="0f0ea16fe5c3ccaa1f1c239674409d15" category="list-text">「 * Verify after backup * 」を選択して、バックアップを検証します。</block>
   <block id="3bbda889c732b2c1d0be2a3446bf0fc3" category="paragraph">暗黙的なリソースグループが作成されます。これを表示するには、 * User Access * ページから該当するユーザーまたはグループを選択します。暗黙的なリソースグループタイプは「リソース」です。</block>
-  <block id="6b82c658b31dd0db1cb85c0f9d0dd56c" category="paragraph"><block ref="6b82c658b31dd0db1cb85c0f9d0dd56c" category="inline-link-macro-rx"></block></block>
   <block id="db9c751c1327ee48b470f3140421daf6" category="inline-link">TCP_TIMEOUT での遅延のために MySQL 接続エラーが発生して、バックアップ処理が失敗します</block>
   <block id="0cd607c6c3ab41f1a5532b188171495c" category="paragraph"><block ref="0cd607c6c3ab41f1a5532b188171495c" category="inline-link-rx"></block></block>
   <block id="c473dc65af16d92c688e88cffad5b825" category="inline-link">Windows スケジューラのエラーでバックアップが失敗します</block>
@@ -7361,4 +7360,5 @@
   <block id="15e336a500bbc8b78c88e27a721b8803" category="doc">SnapCenter Plug-in for Microsoft Windows のインストールワークフロー</block>
   <block id="b14fc44cfe032bef907580bf7aae09ed" category="paragraph">コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block></block>
   <block id="3508e18c47b24e9df15eebd5671549ba" category="paragraph">また、 _Uninstall-sSmHostPackage_ コマンドレットと必要なパラメータを使用して、複数のホストからプラグインをアンインストールすることもできます。コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block>。</block>
+  <block id="51fb25555c87830dd2151ad5f3b7a845" category="paragraph"><block ref="51fb25555c87830dd2151ad5f3b7a845" category="inline-link-macro-rx"></block></block>
 </blocks>

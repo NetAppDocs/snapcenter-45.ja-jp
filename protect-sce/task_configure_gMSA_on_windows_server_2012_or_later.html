@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>Exchange リソースをバックアップに使用できるかどうかを確認します</title>
+  <title>Windows Server 2012 以降で gMSA を構成します</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Exchange リソースをバックアップに使用できるかどうかを確認します" />
+  <meta property="og:title" content="Windows Server 2012 以降で gMSA を構成します" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html" />
-	<meta property="og:description" content="リソースとは、インストールしたプラグインで管理されているデータベースと Exchange データベース可用性グループです。リソースをリソースグループに追加することでデータ保護ジョブを実行できますが、その前に利用可能なリソースを特定しておく必要があります。使用可能なリソースを確認することで、プラグインのインストール..." />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html" />
+	<meta property="og:description" content="Windows Server 2012 以降では、管理ドメインアカウントからサービスアカウントパスワードの自動管理を提供するグループ Managed Service Account \ （ gMSA \ ）を作成できます。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/snapcenter-45/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="リソースとは、インストールしたプラグインで管理されているデータベースと Exchange データベース可用性グループです。リソースをリソースグループに追加することでデータ保護ジョブを実行できますが、その前に利用可能なリソースを特定しておく必要があります。使用可能なリソースを確認することで、プラグインのインストール...">
-  <meta name="keywords" content=" credentials"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Windows Server 2012 以降では、管理ドメインアカウントからサービスアカウントパスワードの自動管理を提供するグループ Managed Service Account \ （ gMSA \ ）を作成できます。">
+  <meta name="keywords" content=" "><!-- Icons -->
   <link rel="icon" href="/ja-jp/snapcenter-45/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -179,21 +179,21 @@
 
   <ul class="custom-dropdown-menu"><li>
       
-      <a href="https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html" target="_self">
+      <a href="https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html" target="_self">
         <span translate="no" class="notranslate"><span>SnapCenter ソフトウェア</span><span class="version"> 4.5</span></span>
       </a>
                      
     </li>
     <li>
       
-      <a href="https://docs.netapp.com/ja-jp/snapcenter/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html" target="_self">
+      <a href="https://docs.netapp.com/ja-jp/snapcenter/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html" target="_self">
         <span translate="no" class="notranslate"><span>SnapCenter ソフトウェア</span><span class="version"> 4.6</span></span>
       </a>
                      
     </li>
     
   </ul>
-</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snapcenter-45/issues/new?body=Page%3A%20[Exchange リソースをバックアップに使用できるかどうかを確認します](https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/snapcenter-45/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/snapcenter-45/blob/main/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/snapcenter-45/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/snapcenter-45/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snapcenter-45/issues/new?body=Page%3A%20[Windows Server 2012 以降で gMSA を構成します](https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/snapcenter-45/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/snapcenter-45/blob/main/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/snapcenter-45/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/snapcenter-45/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -316,13 +316,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -2258,6 +2258,15 @@
 
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ja-jp/snapcenter-45/pdfs/pages/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.pdf" >
+    <img src="/ja-jp/snapcenter-45/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -2338,15 +2347,6 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/snapcenter-45/pdfs/pages/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.pdf" >
-    <img src="/ja-jp/snapcenter-45/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -3826,7 +3826,7 @@
         ホストを追加して SnapCenter Plug-in for Microsoft Exchange Server をインストールするための前提条件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html">
         SnapCenter Plug-in for Windows のクレデンシャルを設定します
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html">
         Windows Server 2012 以降で gMSA を構成します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html">
         ホストを追加し、 Plug-in for Exchange をインストールします
@@ -3862,7 +3862,7 @@
         バックアップのワークフロー
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/reference_exchange_database_and_backup_verification.html">
         Exchange データベースおよびバックアップの検証
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html">
         Exchange リソースをバックアップに使用できるかどうかを確認します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/snapcenter-45/protect-sce/task_create_backup_policies_for_exchange_server_databases.html">
         Exchange Server データベースのバックアップポリシーを作成する
@@ -4194,22 +4194,22 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Exchange リソースをバックアップに使用できるかどうかを確認します</h1>
+  <h1 class="n-doc__component-detail-heading">Windows Server 2012 以降で gMSA を構成します</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-04-22 07:08:57 +0000">04/22/2022</time>
+    <time datetime="2022-04-26 11:18:33 +0000">04/26/2022</time>
     
   
 
 
 </p>
 
-<div class="paragraph lead">
-<p>リソースとは、インストールしたプラグインで管理されているデータベースと Exchange データベース可用性グループです。リソースをリソースグループに追加することでデータ保護ジョブを実行できますが、その前に利用可能なリソースを特定しておく必要があります。使用可能なリソースを確認することで、プラグインのインストールが正常に完了したことの確認にもなります。</p>
+<div class="paragraph">
+<p>Windows Server 2012 以降では、管理ドメインアカウントからサービスアカウントパスワードの自動管理を提供するグループマネージドサービスアカウント（ gMSA ）を作成できます。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4217,85 +4217,104 @@
 <p>必要なもの *</p>
 </li>
 <li>
-<p>SnapCenter サーバのインストール、ホストの追加、ストレージシステム接続の作成、クレデンシャルの追加、 Plug-in for Exchange のインストールなどのタスクを完了しておく必要があります。</p>
+<p>Windows Server 2012 以降のドメインコントローラが必要です。</p>
 </li>
 <li>
-<p>Single Mailbox Recovery ソフトウェアの機能を利用するには、 Single Mailbox Recovery ソフトウェアがインストールされている Exchange サーバ上に、アクティブデータベースを配置する必要があります。</p>
-</li>
-<li>
-<p>データベースが VMware RDM LUN にある場合は、 SnapCenter Plug-in for VMware vSphere を導入し、 SnapCenter に登録する必要があります。。 <a href="https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html">"SnapCenter Plug-in for VMware vSphere のドキュメント"</a> に詳細を示します。</p>
-</li>
-<li>
-<p>このタスクについて *</p>
-</li>
-<li>
-<p>[ 詳細 ] ページの [ 全体のステータス *] オプションが [ バックアップに使用できない ] に設定されている場合は、データベースをバックアップできません。次のいずれかに該当する場合、 * Overall Status * オプションはバックアップに使用できない状態に設定されます。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>データベースが NetApp LUN 上にない。</p>
-</li>
-<li>
-<p>データベースが正常な状態でない。</p>
-<div class="paragraph">
-<p>マウント、アンマウント、再シード、またはリカバリを保留中の状態のデータベースは、正常な状態ではありません。</p>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Database Availability Group （ DAG ；データベース可用性グループ）がある場合は、 DAG からバックアップジョブを実行して、グループ内のすべてのデータベースをバックアップできます。</p>
+<p>ドメインのメンバーである Windows Server 2012 以降のホストが必要です。</p>
 </li>
 <li>
 <p>手順 *</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>左側のナビゲーションペインで、 [ リソース ] をクリックし、 [ リソース ] ページの左上にあるプラグインのドロップダウンリストから [Microsoft Exchange Server*] を選択します。</p>
+<p>GMSA のオブジェクトごとに固有のパスワードを生成するには、 KDS ルートキーを作成します。</p>
 </li>
 <li>
-<p>リソースページで、 * 表示 * ドロップダウン・リストから * データベース * 、 * データベース可用性グループ * 、または * リソース・グループ * を選択します。</p>
-<div class="paragraph">
-<p>をクリックします <span class="image"><img src="../media/filter_icon.gif" alt=""></span> をクリックし、ホスト名と Exchange サーバを選択してリソースをフィルタリングします。をクリックします <span class="image"><img src="../media/filter_icon.gif" alt=""></span> をクリックしてフィルタペインを閉じます。</p>
-</div>
+<p>ドメインごとに、 Windows ドメインコントローラから次のコマンドを実行します。 Add-KDSRootKey -EffectiveImmedient</p>
 </li>
 <li>
-<p>[ リソースの更新 ] をクリックします。</p>
-<div class="paragraph">
-<p>新しく追加、名前変更、または削除されたリソースは、 SnapCenter サーバインベントリに更新されます。</p>
-</div>
-<div class="paragraph">
-<p>リソースは、リソース名、データベース可用性グループ名、データベースが現在アクティブであるサーバ、コピーを備えたサーバ、前回のバックアップ時刻、全体的なステータスなどの情報とともに表示されます。</p>
-</div>
-<div class="ulist">
-<ul>
+<p>GMSA を作成して構成します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
-<p>ネットアップ以外のストレージにデータベースがある場合、バックアップに使用できない状態は Overall Status 列に表示されます。</p>
-<div class="paragraph">
-<p>DAG では、アクティブなデータベースコピーがネットアップ以外のストレージにある場合に、少なくとも 1 つのパッシブデータベースコピーがネットアップストレージにあると、「全体のステータス」列には保護されていないと表示されます。</p>
-</div>
+<p>ユーザグループアカウントを作成します。</p>
 </li>
-</ul>
+<li>
+<p>グループにコンピュータオブジェクトを追加します。</p>
+</li>
+<li>
+<p>作成したユーザグループを使用して gMSA を作成します。</p>
+<div class="paragraph">
+<p>例：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> New-ADServiceAccount -name &lt;ServiceAccountName&gt; -DNSHostName &lt;fqdn&gt; -PrincipalsAllowedToRetrieveManagedPassword &lt;group&gt; -ServicePrincipalNames &lt;SPN1,SPN2,…&gt;
+.. 「 Get-ADServiceAccount 」コマンドを実行して、サービスアカウントを確認します。</pre>
+</div>
 </div>
 </li>
 </ol>
 </div>
+</li>
+<li>
+<p>ホストで gMSA を設定します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>gMSA アカウントを使用するホストで、 Windows PowerShell 用の Active Directory モジュールを有効にします。</p>
 <div class="paragraph">
-<p>ネットアップ以外のストレージタイプのデータベースには、データ保護処理を実行できません。</p>
+<p>そのためには、 PowerShell から次のコマンドを実行します。</p>
 </div>
-<div class="ulist">
-<ul>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>PS C:\&gt; Get-WindowsFeature AD-Domain-Services
+
+Display Name                           Name                Install State
+------------                           ----                -------------
+[ ] Active Directory Domain Services   AD-Domain-Services  Available
+
+
+PS C:\&gt; Install-WindowsFeature AD-DOMAIN-SERVICES
+
+Success Restart Needed Exit Code      Feature Result
+------- -------------- ---------      --------------
+True    No             Success        {Active Directory Domain Services, Active ...
+WARNING: Windows automatic updating is not enabled. To ensure that your newly-installed role or feature is
+automatically updated, turn on Windows Update.</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
-<p>データベースがネットアップストレージ上にあり、保護されていない場合は、「 * Overall Status * 」列に保護されていないことが表示されます。</p>
+<p>ホストを再起動します。</p>
 </li>
 <li>
-<p>データベースがネットアップストレージシステム上にあり、保護されている場合、ユーザインターフェイスの「バックアップ実行なし」というメッセージが「総合ステータス」列に表示されます。</p>
+<p>PowerShell コマンド・プロンプトの「 Install-AdServiceAccount &lt;gMSA &gt; 」から次のコマンドを実行して ' ホストに gMSA をインストールします</p>
 </li>
 <li>
-<p>データベースがネットアップストレージシステム上にあり、保護されている場合に、データベースのバックアップがトリガされると、ユーザインターフェイスの「 Backup succeeded 」というメッセージが「 * Overall Status * 」列に表示されます。</p>
+<p>次のコマンドを実行して 'gMSA アカウントを確認します 'Test-AdServiceAccount &lt;gMSA &gt;</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>ホスト上で設定されている gMSA に管理者権限を割り当てます。</p>
 </li>
-</ul>
+<li>
+<p>SnapCenter サーバで設定済みの gMSA アカウントを指定して、 Windows ホストを追加します。</p>
+<div class="paragraph">
+<p>SnapCenter サーバーは選択されたプラグインをホストにインストールし、指定された gMSA はプラグインのインストール時にサービスログオンアカウントとして使用されます。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
 </div>
 </li>
 </ul>

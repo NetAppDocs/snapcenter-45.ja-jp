@@ -848,7 +848,6 @@
   <block id="adce1db3350f0ed81a76733f84d8d683" category="list-text">メッセージキューサービスが実行されていることを確認してください。</block>
   <block id="495a029c5d7c250f801f4d0c65513c50" category="list-text">Group Managed Service Account （ gMSA ；グループ管理サービスアカウント）を使用している場合は、管理者権限を持つ gMSA を設定する必要があります。</block>
   <block id="d1556c9da336be030540adcf58889977" category="inline-link-macro">カスタムアプリケーション用に、 Windows Server 2012 以降のグループマネージドサービスアカウントを設定します</block>
-  <block id="7760830a49bc2ffc8c6db5a38cec828f" category="paragraph"><block ref="7760830a49bc2ffc8c6db5a38cec828f" category="inline-link-macro-rx"></block></block>
   <block id="302ca62990c674aa6f608e6444c00482" category="paragraph">SnapCenter サーバをプラグインホストとして別の SnapCenter サーバに追加することはできません。</block>
   <block id="bceac0a8fa4156f8efbbf85fb76e4953" category="paragraph">クラスタ（ WSFC ）にプラグインをインストールすると、クラスタのすべてのノードにプラグインがインストールされます。</block>
   <block id="92167459928f7cb7035350c0b52437da" category="list-text">上部で [Managed Hosts] タブが選択されていることを確認します。</block>
@@ -1594,7 +1593,6 @@
   <block id="45e52ea61331adeddb8fcba96510d245" category="list-text">SnapCenter Admin など、プラグインのインストールとアンインストールの権限のあるロールが割り当てられているユーザが必要です</block>
   <block id="f43b8555947d4751531f2048f4ceb68f" category="list-text">メッセージキューサービスが実行されている必要があります。</block>
   <block id="5da8a38d0d164ee119a4369bd402f7e7" category="inline-link-macro">Windows Server 2012 以降でグループマネージドサービスアカウントを設定します</block>
-  <block id="c3d3d7d361f2929e16e2c819af868aee" category="list-text">Group Managed Service Account （ gMSA ；グループ管理サービスアカウント）を使用している場合は、管理者権限を持つ gMSA を設定する必要があります。詳細については、を参照してください<block ref="de44f57898ffbf94587de066666e509e" category="inline-link-macro-rx"></block>。</block>
   <block id="fdb65cf918a8b520afc6b815f2425d07" category="paragraph">ホストの追加とプラグインパッケージのインストールは、個々のホストまたはクラスタに対して実行できます。クラスタ（ Exchange DAG ）にプラグインをインストールする場合は、ネットアップ LUN 上にデータベースがないノードがある場合でも、クラスタのすべてのノードにインストールされます。</block>
   <block id="c20a8a11a419d74017da773b8a54f9ff" category="paragraph">Plug-in for Exchange は Windows 用 SnapCenter プラグインパッケージによって異なり、バージョンも同じである必要があります。Plug-in for Exchange のインストール時に、デフォルトで SnapCenter Plug-ins Package for Windows が選択され、 VSS Hardware Provider とともにインストールされます。</block>
   <block id="59f72658a4a9eeae3fc1d176e55f407a" category="paragraph">SnapManager for Microsoft Exchange Server と SnapDrive for Windows がすでにインストールされている場合は、 同じ Exchange サーバに Plug-in for Exchange をインストールする場合は、 Plug-in for Exchange および SnapCenter Plug-ins Package for Windows と互換性がないため、 SnapDrive for Windows で使用する VSS ハードウェアプロバイダの登録を解除する必要があります。</block>
@@ -4447,7 +4445,6 @@
   <block id="b8ceb1eaf0d60af03679989562024d6b" category="paragraph">作成したクローンは、名前を変更しないでください。</block>
   <block id="8a2bd81e968aaadb6ec10a1b58f541cc" category="inline-link-macro">SQL Server データベース、インスタンス、または可用性グループをバックアップする</block>
   <block id="38c78702a48e457f5ef291281168432e" category="paragraph"><block ref="38c78702a48e457f5ef291281168432e" category="inline-link-macro-rx"></block></block>
-  <block id="77a401672d28681f3a520de107c9ed51" category="paragraph"><block ref="77a401672d28681f3a520de107c9ed51" category="inline-link-macro-rx"></block></block>
   <block id="68f8e37f5b3d7c3c6c34a481b33a736f" category="inline-link">デフォルトの TCP_TIMEOUT 値を使用すると、クローニング処理が失敗するか所要時間が長くなる可能性があります</block>
   <block id="f7e7f0dd9d36aec3d609775de2dbbd0b" category="paragraph"><block ref="f7e7f0dd9d36aec3d609775de2dbbd0b" category="inline-link-rx"></block></block>
   <block id="1e9ab426973a56020f8d1db85cb07f06" category="inline-link">フェイルオーバークラスタインスタンスのデータベースクローンが失敗します</block>
@@ -4659,7 +4656,6 @@
   <block id="e8d616df7d87b5ecbfca2c2859a9c91e" category="list-text">リストアジョブの実行後に実行するオプションのスクリプトを指定します。</block>
   <block id="c00abdc969617f536cb93b03d1479c4d" category="list-text">[ * Monitor * &gt; * Jobs * ] ページを使用してリストア・プロセスを監視します。</block>
   <block id="6924edabeae66398839af50da876447a" category="inline-link-macro">PowerShell コマンドレットを使用してリソースをリストアおよびリカバリする</block>
-  <block id="455f3e406c536ec723cdf3bf3192c0e5" category="paragraph"><block ref="455f3e406c536ec723cdf3bf3192c0e5" category="inline-link-macro-rx"></block></block>
   <block id="86cc84259391356d6bc58883c4b14046" category="inline-link-macro">セカンダリストレージから SQL Server データベースをリストアする</block>
   <block id="69bb12bd720ba41593c0fadfa768b82e" category="paragraph"><block ref="69bb12bd720ba41593c0fadfa768b82e" category="inline-link-macro-rx"></block></block>
   <block id="9660edb91fac8702aaa8095506c95490" category="summary">バックアップジョブを作成する前にバックアップ戦略を定義しておくと、データベースの正常なリストアやクローニングに必要なバックアップを確実に作成できます。バックアップ戦略の大部分は、サービスレベルアグリーメント（ SLA\ ）、目標復旧時間（ RTO\ ）、および目標復旧時点（ RPO\ ）によって決まります。</block>
@@ -4976,7 +4972,6 @@
   <block id="afaa5b2bc1434ec7ffc7373a3d37ff03" category="list-text">Windows ホストにプラグインをインストールするときに、ビルトインでないクレデンシャルを指定する場合は、ホストで UAC を無効にします。</block>
   <block id="b5eb0b5304f9fc2eda1c4758804a309a" category="list-text">メッセージキューイングサービスが実行中状態であることを確認する必要があります。</block>
   <block id="005e0b40f0357593974211c0506e1021" category="inline-link-macro">Windows Server 2012 以降で SQL 用のグループマネージドサービスアカウントを設定します</block>
-  <block id="cbb9319067916a535f7b003c1a70b83f" category="paragraph"><block ref="cbb9319067916a535f7b003c1a70b83f" category="inline-link-macro-rx"></block></block>
   <block id="e0a6a8624a69b68bc0839f233664cd97" category="paragraph">ホストの追加とプラグインパッケージのインストールは、個々のホストまたはクラスタに対して実行できます。クラスタまたは Windows Server Failover Clustering （ WSFC ）にプラグインをインストールする場合、プラグインはクラスタのすべてのノードにインストールされます。</block>
   <block id="e11f6d0c6669ff79495717e9f38e9fc3" category="paragraph">ホストの管理の詳細については、を参照してください <block ref="801cfa467bb6d1aeeb6375d305370903" category="inline-link-macro-rx"></block>。</block>
   <block id="1c92ab8626c20e01298d27cdffde2996" category="list-text">[*Hosts*] ページで、次の操作を実行します。</block>
@@ -6438,7 +6433,6 @@
   <block id="6999d09aed9c7b160e001c5345554e29" category="doc">ホストを追加し、 SnapCenter Plug-in for Microsoft Windows をインストールします</block>
   <block id="7cfe72b14626cbdfa82c7d1d900586aa" category="list-text">SnapCenter ユーザーは 'Windows Server のサービスとしてログオンロールに追加する必要があります</block>
   <block id="634521473d8c5fdebcafa0c217efa6b5" category="inline-link-macro">Windows ファイルシステム用に、 Windows Server 2012 以降のグループマネージドサービスアカウントを設定します</block>
-  <block id="8d338c95545ac01f94f754b10be02dec" category="paragraph"><block ref="8d338c95545ac01f94f754b10be02dec" category="inline-link-macro-rx"></block></block>
   <block id="cce76c1c114e69fd9b5ed7b130742034" category="list-text">Windows プラグイン</block>
   <block id="a561a8020c6cf9c0bfcf2c0057ac1550" category="list-text">Microsoft Exchange Server の略</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server の場合</block>
@@ -7361,4 +7355,11 @@
   <block id="b14fc44cfe032bef907580bf7aae09ed" category="paragraph">コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block></block>
   <block id="3508e18c47b24e9df15eebd5671549ba" category="paragraph">また、 _Uninstall-sSmHostPackage_ コマンドレットと必要なパラメータを使用して、複数のホストからプラグインをアンインストールすることもできます。コマンドレットで使用できるパラメータとその説明については、 RUN_Get-Help コマンド _NAME_ を実行して参照できます。または、を参照することもできます<block ref="aabd79bbab071761889403beced1e0e9" category="inline-link-rx"></block>。</block>
   <block id="51fb25555c87830dd2151ad5f3b7a845" category="paragraph"><block ref="51fb25555c87830dd2151ad5f3b7a845" category="inline-link-macro-rx"></block></block>
+  <block id="30e7f68451a94c7e462c35be6a21cef9" category="paragraph">SnapCenter * Add Host * ページを使用して、 Windows ホストを追加できます。指定したホストに Plug-in for Exchange が自動的にインストールされます。これはプラグインのインストールに推奨される方法です。ホストを追加してプラグインをインストールするには、個々のホストまたはクラスタを使用します。</block>
+  <block id="aafa52eb5dcc479a1cd4f3a47f9aaab1" category="list-text">Group Managed Service Account （ gMSA ；グループ管理サービスアカウント）を使用している場合は、管理者権限を持つ gMSA を設定する必要があります。詳細については、を参照してください<block ref="ac4ee76cebada45b93566fc9fb30e5f6" category="inline-link-macro-rx"></block>。</block>
+  <block id="d2f75a69047fa1d93423f0ebca0e578e" category="paragraph"><block ref="d2f75a69047fa1d93423f0ebca0e578e" category="inline-link-macro-rx"></block></block>
+  <block id="b7ee450a891722e2248bf6edbef84f21" category="paragraph"><block ref="b7ee450a891722e2248bf6edbef84f21" category="inline-link-macro-rx"></block></block>
+  <block id="f9db2c2c51ac713541e90ff79219156d" category="paragraph"><block ref="f9db2c2c51ac713541e90ff79219156d" category="inline-link-macro-rx"></block></block>
+  <block id="7a679a1d48731136f64e6e6d38429002" category="paragraph"><block ref="7a679a1d48731136f64e6e6d38429002" category="inline-link-macro-rx"></block></block>
+  <block id="8eea6d6db8756ac6f485ef882956153e" category="paragraph"><block ref="8eea6d6db8756ac6f485ef882956153e" category="inline-link-macro-rx"></block></block>
 </blocks>

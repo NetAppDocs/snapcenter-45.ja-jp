@@ -13,7 +13,7 @@ settings:
   - name: SnapCenter ソフトウェア
     url: "/snapcenter"
     version-number: '4.6'
-  langs: ja-jp,us-en,zh-cn,ko-kr
+  langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
 sidebar:
   entries:
   - title: SnapCenter ソフトウェア 4.5 のドキュメント

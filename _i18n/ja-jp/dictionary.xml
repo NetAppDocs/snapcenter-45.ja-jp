@@ -114,7 +114,6 @@
   <block id="bd5309e59a4bca83b633c90ae5daf38b" category="paragraph">SnapCenter プラグインと ONTAP の SnapMirror テクノロジを使用すると、バックアップセットのミラーコピーを別のボリュームに作成できます。また、 ONTAP SnapVault テクノロジを使用すると、標準への準拠やその他のガバナンス関連の目的でディスクツーディスクのバックアップレプリケーションを実行できます。これらのタスクを実行する前に、ソースボリュームとデスティネーションボリュームの間にデータ保護関係を設定し、その関係を初期化する必要があります。</block>
   <block id="9b646613b64beb84f0dd23de8375c5b4" category="admonition">ネットアップの SnapManager 製品から SnapCenter に移行した場合、データ保護関係が適切に設定されていれば、このセクションは省略してかまいません。</block>
   <block id="6ff146878a4540cb5c56e41c5dc907df" category="paragraph">データ保護関係では、プライマリストレージ（ソースボリューム）上のデータがセカンダリストレージ（デスティネーションボリューム）にレプリケートされます。この関係を初期化すると、 ONTAP はソースボリュームで参照されるデータブロックをデスティネーションボリュームに転送します。</block>
-  <block id="dd91d992ea162a54fe948382dc6122fb" category="admonition">SnapCenter は、 SnapMirror ボリュームと SnapVault ボリュームのカスケード関係をサポートしていません（ * プライマリ * &gt; * ミラー * &gt; * バックアップ * ）。ファンアウト関係のみを使用してください（ * Primary * &gt; * Mirror * 、 * Primary * &gt; * Vault * ）。</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP のドキュメント</block>
   <block id="85f4322e48905f6a2043ad68d659cc9b" category="paragraph">SnapCenter では、バージョンに依存しない SnapMirror 関係の管理がサポートされます。バージョンに依存しない SnapMirror 関係の詳細およびその設定方法については、を参照してください<block ref="8f4b16b80a7cbb7edba7f6aa6efedcf1" category="inline-link-rx"></block>。</block>
   <block id="fdace28a15a0c32d01477d6a6f02b764" category="summary">SnapCenter Plug-ins Package for Windows をインストールする前に、ホストシステムのいくつかの基本的なスペース要件とサイジング要件を確認しておく必要があります。</block>
@@ -154,7 +153,6 @@
   <block id="5bfdbe319f93f982db7e2e53d844bd74" category="list-text">GMSA のオブジェクトごとに固有のパスワードを生成するには、 KDS ルートキーを作成します。</block>
   <block id="35c239ad892c492785a568f43643a49b" category="list-text">ドメインごとに、 Windows ドメインコントローラから次のコマンドを実行します。 Add-KDSRootKey -EffectiveImmedient</block>
   <block id="4e2c07bd931da6c7ec41ee4923c33de0" category="list-text">GMSA を作成して構成します。</block>
-  <block id="64f0c9a3329f7826505496e99f5b6257" category="list-text">ユーザグループアカウントを作成します。</block>
   <block id="e9311390b1566f1587fec0689b110903" category="list-text">グループにコンピュータオブジェクトを追加します。</block>
   <block id="f22d222d43494a76b9ced73084b174f7" category="list-text">作成したユーザグループを使用して gMSA を作成します。</block>
   <block id="cabbc139b7f74771c47e3eb24d94c92b" category="paragraph">例：</block>
@@ -3573,7 +3571,6 @@
   <block id="d92a8f6f3c2b6a9c57099c523a22f5b2" category="paragraph">保持設定に基づいて、プライマリストレージまたはセカンダリストレージの Snapshot コピーと SAP HANA のカタログ内の対応するエントリが削除されます。SAP HANA のカタログのエントリは、バックアップやリソースグループを削除したときにも削除されます。</block>
   <block id="ffaafcbad8fa7abfb6f9166b4bc76388" category="doc">SAP HANA のバックアップ処理をキャンセルします</block>
   <block id="8f088fc353589a53b22d09fce118b2a6" category="doc">SnapCenter Plug-in for SAP HANA Database のクレデンシャルを設定します</block>
-  <block id="d1c9be42188126d7cdb36006987f8674" category="paragraph">Windows のパスワードには二重引用符（ " ）を使用しないでください。</block>
   <block id="afd7453bfb7b2ee3805b612dd9889484" category="summary">データベースのリストアとリカバリを行う前に戦略を定義しておくと、リストア処理とリカバリ処理を正常に実行できるようになります。</block>
   <block id="f053b1c99159302e4282006cc7c9d970" category="doc">SAP HANA リソースのリストアとリカバリの戦略を定義する</block>
   <block id="c6534fab43cf3777e5130a53358227ce" category="list-text">手動で追加した SAP HANA リソースでサポートされるリストア戦略を決定します</block>
@@ -4414,7 +4411,6 @@
   <block id="142a30b21dac9ab880bf900d3257d4a8" category="paragraph">SnapCenter Plug-in for Microsoft SQL Server を導入する場合は、プラグインのインストール後に SQL クレデンシャルを設定する必要があります。このクレデンシャルは、 SQL Server の sysadmin 権限を持つユーザに対して設定します。</block>
   <block id="8557b002056fb65c6ef25f01c341f05a" category="paragraph">SQL 認証方式は、 SQL Server インスタンスに照らして認証します。つまり、 SnapCenter で SQL Server インスタンスが検出されている必要があります。そのため、 SQL クレデンシャルを追加する前に、ホストの追加とプラグインパッケージのインストールを行って、リソースを更新しておく必要があります。SQL Server 認証は、スケジュール設定やリソース検出などの処理を実行する際に必要になります。</block>
   <block id="67b9087c700b41bfc960610e03f7b788" category="paragraph">SnapCenter プラグインをインストールするシステムのドメイン管理者を指定します。Username フィールドの有効な形式は次のとおりです。</block>
-  <block id="52a731706049956361af4bdd1cdbccc7" category="paragraph">パスワードには二重引用符（ " ）を使用しないでください。</block>
   <block id="b69ed1001f49162c486a751163953a80" category="paragraph">使用する認証モードを選択します。SQL 認証モードを選択した場合は、 SQL Server インスタンスとその SQL インスタンスのホストも指定する必要があります。</block>
   <block id="a61442d4f2c413e3792d7594050ba2cc" category="summary">Remove-SmBackup コマンドレットを使用して、 Snapshot コピーがないセカンダリバックアップのバックアップ数をクリーンアップできます。このコマンドレットは、 Manage Copies トポロジに表示される Snapshot コピーの合計数がセカンダリストレージの Snapshot コピー保持設定と一致しない場合に使用できます。</block>
   <block id="11dc6d5147b38aacb94d18c088856bed" category="doc">PowerShell コマンドレットを使用してセカンダリバックアップ数をクリーンアップします</block>
@@ -7355,4 +7351,9 @@
   <block id="22d8a94cf37cc6d66c941a43b9d79fa8" category="paragraph">ホストでCA証明書の検証が有効になっている場合はtrueと表示されます。</block>
   <block id="f5834ae40c2c791cfe589857bdad345c" category="paragraph">このパラメータを有効または無効にするには、spl.propertiesを編集するか、SnapCenter GUIまたはコマンドレットを使用します。</block>
   <block id="0fc6896a1941ab3074a525b384b1d103" category="paragraph">。<block ref="1b419d76cc3163a36d36ff494ed65b44" category="inline-link-rx"></block> サポートされているバージョンに関する最新情報が含まれています。</block>
+  <block id="7cbf140d17e0f4c0fe27276252add63e" category="list-text">次の形式でユーザグループアカウントを作成します。</block>
+  <block id="d332f88a3886e736c322b3643225a6cd" category="admonition">SnapCenter は、 SnapMirror ボリュームと SnapVault ボリュームのカスケード関係をサポートしていません（ * プライマリ * &gt; * ミラー * &gt; * バックアップ * ）。ファンアウト関係を使用する必要があります。</block>
+  <block id="76532e7091335c4eb76878af878c5b79" category="paragraph">パスワードに二重引用符（"）またはバックティック（`）を使用しないでください。小なり（&lt;）と感嘆符（！）は使用しないでください。 パスワードに記号を追加します。たとえば、lessthan &lt;！10、lessthan10 &lt;！、backtick 12とします。</block>
+  <block id="fb6661786b7d5b1cfb5df7ffe94a3009" category="paragraph">サードパーティ製バックアップスケジュールが SnapCenter バックアップスケジュールと重複している場合、それらのバックアップスケジュールはサポートされません。WindowsスケジューラまたはSQL Serverエージェントで作成されたバックアップジョブは、スケジュールを変更したり、名前を変更したりしないでください。</block>
+  <block id="5891deda92209d1d45144775b7d5c20d" category="admonition">WindowsスケジューラまたはSQL Serverエージェントで作成されたバックアップジョブの名前は変更しないでください。</block>
 </blocks>

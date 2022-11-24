@@ -196,4 +196,6 @@ network interface show の略
 
 Vserver
 
+MetroCluster のショーをご覧ください
+
 |===

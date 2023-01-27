@@ -6570,7 +6570,6 @@
   <block id="92cc2a9a2d5824e9c2b490a8fb082801" category="paragraph">SnapCenter ストアを自動的に削除する前に Snapshot コピー数を指定する場合は、このオプションを選択します。</block>
   <block id="0a3cfeac0775871baedb24392bc4423c" category="paragraph">より古い Snapshot コピーを削除します</block>
   <block id="9fbc3fb0ee9d4d329dbc0f3053b7b871" category="paragraph">SnapCenter がバックアップコピーを保持する日数を指定する場合は、このオプションを選択します。指定した日数を過ぎると削除されます。</block>
-  <block id="e19ad44a5949f6c604b843ea60587e80" category="admonition">SnapVault レプリケーションを有効にする場合は、保持数を 2 以上に設定する必要があります。レプリケーション数を 1 に設定すると、保持処理が失敗する可能性があります。これは、新しい Snapshot コピーがターゲットにレプリケートされるまで、最初の Snapshot コピーが SnapVault 関係の参照 Snapshot コピーになるためです。</block>
   <block id="528b991e02d6603cb6d43b5633c41bc7" category="list-text">Replication （レプリケーション）ページで、セカンダリストレージシステムへのレプリケーションを指定します。</block>
   <block id="a0d0bc8e6daaaf8b0c2bf80df11cf096" category="list-text">スクリプトページで、 SnapCenter サーバでバックアップ処理の前後に実行するプリスクリプトまたはポストスクリプトのパスと、 SnapCenter がスクリプトの実行を待機してからタイムアウトするまでの時間を入力します。</block>
   <block id="6c713d56e86f927e1bd66c7de2ed52c1" category="summary">SnapCenter Plug-in for Microsoft Windows を複数のホストに一度にインストールする場合は、 Install-SmHostPackage PowerShell コマンドレットを使用します。</block>
@@ -7358,4 +7357,5 @@
   <block id="e2bb7a9783ce9c6c02e6001911562e16" category="list-text"><block ref="2e72f8b3689961923dec66f94cdf620f" prefix="" category="inline-code"></block></block>
   <block id="14952648adc190dcb5a5245293d5f196" category="list-text"><block ref="5eae2e4676c03cd5a87d91855e383655" prefix="" category="inline-code"></block></block>
   <block id="4574736625a206c36aa88ccb73fced3e" category="list-text"><block ref="9968070f531307f6dc7d65233ad2073f" prefix="" category="inline-code"></block></block>
+  <block id="cab00f169fcfeb601710dd89ecbfedf0" category="admonition">保持数を2以上に設定してください。保持数の最小値は2です。</block>
 </blocks>

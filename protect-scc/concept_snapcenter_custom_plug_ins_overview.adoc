@@ -18,7 +18,7 @@ Custom Plug-ins をインストールすると、 SnapCenter と NetApp SnapMirr
 
 NOTE: SnapCenter CLI では、 SnapCenter Custom Plug-ins コマンドはサポートされていません。
 
-ネットアップでは、 MySQL と DB2 のカスタムプラグインとして、 SnapCenter ソフトウェア 2.0 以降および MongoDB のカスタムプラグインを 3.0 以降から提供しています。これらのプラグインは、からダウンロードできます https://automationstore.netapp.com/home.shtml["NetApp Storage Automation Store の略"^]。
+NetApp は、SnapCenter Software 2.0 以降で MySQL および DB2 カスタムプラグインを、3.0 以降で MongoDB カスタムプラグインを提供しています。
 
 
 NOTE: MySQL 、 DB2 、 MongoDB のカスタムプラグインは、ネットアップのコミュニティでのみサポートされます。
